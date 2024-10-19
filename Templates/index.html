@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume/CV Generator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-briefcase"></i> Resume/CV Generator</h1>
+        </header>
+        <form method="POST" action="/" class="form-container">
+            <div class="input-group">
+                <i class="fas fa-user"></i>
+                <input type="text" name="name" placeholder="Full Name" required>
+            </div>
+            <div class="input-group">
+                <i class="fas fa-envelope"></i>
+                <input type="email" name="email" placeholder="Email" required>
+            </div>
+            <div class="input-group">
+                <i class="fas fa-phone"></i>
+                <input type="tel" name="contact" pattern="[0-9]+" inputmode="numeric"  placeholder="Contact Number" required>
+            </div>
+            <div class="input-group">
+                <i class="fas fa-id-badge"></i>
+                <input type="text" name="role" placeholder="Job Role" required>
+            </div>
+            <div class="input-group">
+                <i class="fas fa-align-left"></i>
+                <textarea name="profile" placeholder="Profile Summary" required></textarea>
+            </div>
+            <div class="input-group">
+                <i class="fas fa-graduation-cap"></i>
+                <textarea name="education" placeholder="Education" required></textarea>
+            </div>
+            <div class="input-group">
+                <i class="fas fa-certificate"></i>
+                <textarea name="training_and_certificates" placeholder="Training & Certificates (if any)" ></textarea>
+            </div>
+            <div class="input-group">
+                <i class="fas fa-briefcase"></i>
+                <textarea name="experience" placeholder="Work Experience (if any)" ></textarea>
+            </div>
+            <div class="input-group">
+                <i class="fas fa-lightbulb"></i>
+                <input type="text" name="skills" placeholder="Skills (comma-separated)" required>
+            </div>
+            <div class="input-group">
+                <i class="fas fa-project-diagram"></i>
+                <textarea name="projects" placeholder="Projects" required></textarea>
+            </div>
+            <button type="submit"><i class="fas fa-paper-plane"></i> Generate Resume</button>
+        </form>
+    </div>
+</body>
+</html>

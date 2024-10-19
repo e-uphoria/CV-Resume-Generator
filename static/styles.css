@@ -1,0 +1,120 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #FAF3F3; /* Soft light pink for body */
+    color: #9575cd; /* Lighter Lavender  */
+    font-size: 0.9em; /* Global font size to normalize across pages */
+    line-height: 1.5; /* Consistent line height for readability */
+}
+
+/* Container Styling */
+.container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Softer shadow for depth */
+    background-color: #ffffff; 
+    border-radius: 12px; /* Smoother rounded corners */
+}
+
+/* Header Styling */
+.header {
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 1.5em; /* Same font size for all headers */
+    color: #5e35b1; /* Dark purple for header */
+    font-weight: bold;
+}
+
+/* Input Group and Icons */
+.input-group {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.input-group i {
+    margin-right: 8px;
+    color: #9575cd; /* Lighter lavender for icons */
+    width: 24px; 
+    text-align: center; 
+    font-size: 1.2em;
+}
+
+/* Inputs and Textareas */
+input[type="text"], input[type="email"], input[type="tel"], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #764ba2; /* Purple borders */
+    border-radius: 6px;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+    background-color: #F4EAF6; /* Light lavender background for input fields */
+    color: #333333; 
+    font-family: 'Arial', sans-serif;
+    font-size: 0.9em; /* Consistent font size */
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="tel"]:focus, textarea:focus {
+    border-color: #5e35b1; /* Darker purple on focus */
+    outline: none; /* Removes the default outline */
+    box-shadow: 0 0 8px rgba(94, 53, 177, 0.3); /* Subtle glow effect */
+}
+
+/* Buttons */
+button {
+    background-color: #9575cd; /* Rich lavender for button */
+    color: #ffffff;
+    padding: 12px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+    font-family: 'Arial', sans-serif; 
+    font-size: 1em;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #7e57c2; /* Slightly darker lavender on hover */
+}
+
+/* Textarea Styling */
+textarea {
+    height: 100px;
+    resize: vertical; /* Allow vertical resizing only */
+}
+
+/* Normalize All Section Headings */
+h3 {
+    font-size: 1.2em; /* Standardized heading size */
+    font-weight: bold;
+    color: #5e35b1; /* Consistent color for all headings */
+    margin-top: 20px; /* Consistent margin for better spacing */
+}
+
+/* Paragraph Styling */
+p {
+    font-size: 0.9em; /* Keep paragraphs consistent with global font-size */
+    line-height: 1.5; /* Improved readability */
+    margin-bottom: 12px; /* Consistent margin between paragraphs */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Softer shadow for smaller screens */
+    }
+
+    .input-group {
+        flex-direction: column; /* Stack icon and input vertically */
+        align-items: stretch;
+    }
+
+    .input-group i {
+        width: auto; /* Allow icons to resize */
+        margin-bottom: 5px; /* Add space below icon */
+    }
+}
